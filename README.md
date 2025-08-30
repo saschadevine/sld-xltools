@@ -23,8 +23,12 @@ A suite of Python scripts using ```openpyxl``` for manipulating XLSX and CSV fil
 - ```copyrange.py``` copies a specified range of source cells, from a specified sheet of an source XLSX file, into a specified, same-size range of destination cells, in a specified sheet of a destination XLSX file
 - ```eval2csv.py``` evaluates all formulae in a range of cells from an input XLSX file, and outputs as a flat CSV file
 
-## Example Applications
+## Example Application
 - From multiple input XLSX files associated with a single experiment, insert important statistics into an analysis template, evaluate everything in the report sheet of the template, and output as a flat CSV for distribution to teammates
+  - Can write a simple ```bash``` script to do this
+  - Begin with an empty template containing multiple sheets to receive source data, and one sheet with formulae to analyze the data
+  - Run ```copyrange.py``` multiple times to insert different source data into the appropriate sheets of the template
+  - Finally, run ```eval2csv.py``` on the template analysis sheet, to "flatten" its contents (ie., evaluate its formulae) and save it as CSV 
 
 ## Requirements
 ```copyrange.py``` requires:
