@@ -40,6 +40,10 @@ A suite of Python scripts using ```openpyxl``` for manipulating XLSX and CSV fil
 - Python library ```openpyxl```
 - Python library ```xlcalculator```
 
+```csv2xlsx.py``` requires:
+- Python 3.10.12 or better
+- Python library ```pandas```
+
 ## Usage
 ### ```copyrange.py```
 
