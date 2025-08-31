@@ -73,3 +73,15 @@ python3 eval2csv.py SOURCE.XLSX SrcSheetName SrcUbound:SrcLbound DEST.CSV Trunca
 - ```TruncateOnFirst``` is a boolean flag:
   - If ```TRUE```, only rows with values in column A are evaluated and written to ```DEST.CSV```. Rows containing no value in column A are treated as containing no data (even if formulae are present) and are not written to ```DEST.CSV```
   - If ```FALSE```, all rows will be evaulated written to ```DEST.CSV```, even for rows where column A contains no value
+
+### ```csv2xlsx.py```
+
+#### Syntax
+```
+python3 csv2xlsx.py SOURCE.CSV DEST.XLSX
+```
+
+#### Assumptions
+
+- ```SOURCE.CSV``` is a valid CSV file containing source data
+- ```DEST.XLSX``` is a valid XLSX filename to serve as destination for data (does not need to exist; existing files will be overwritten)
