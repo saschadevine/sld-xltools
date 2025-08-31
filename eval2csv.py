@@ -40,8 +40,6 @@
 import sys, os, openpyxl, csv
 from xlcalculator import ModelCompiler, Model, Evaluator
 
-#from openpyxl.utils.cell import coordinate_from_string, column_index_from_string
-
 # Prepare a usage string, to display in case of an error
 usage_text = "USAGE : python3 eval2csv.py SOURCE.XLSX SrcSheetName SrcUbound:SrcLbound DEST.CSV TruncateOnFirst\n"
 
