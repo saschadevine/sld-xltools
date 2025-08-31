@@ -28,7 +28,8 @@ A suite of Python scripts using ```openpyxl``` for manipulating XLSX and CSV fil
   - Can write a simple ```bash``` script to do this
   - Begin with an empty template containing multiple sheets to receive source data, and one sheet with formulae to analyze the data
   - Run ```copyrange.py``` multiple times to insert different source data into the appropriate sheets of the template
-  - Finally, run ```eval2csv.py``` on the template analysis sheet, to "flatten" its contents (ie., evaluate its formulae) and save it as CSV 
+  - Run ```eval2csv.py``` on the template analysis sheet, to "flatten" its contents (ie., evaluate its formulae) and save it as CSV 
+  - Finally, run ```csv2xlsx.py``` to convert flattened CSV data into an XLSX file capable of formatting as required for deliverables to teammates
 
 ## Requirements
 ```copyrange.py``` requires:
